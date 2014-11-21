@@ -11,8 +11,23 @@ PathWrapper('..{.color === "red"}').apply({a:{b:{color:"red"}}}).map(console.log
 })
 `
 
+## Constructors
+
+* PathWrapper("path")
+* PathWrapper("path", object)
+* PathWrapper("path", substitution, object)
+
+## Methods
+* prep("path", substitution) - allows you to keep the same object but change what you're looking for
+* apply(object) - applys the currently set path and substitution search on that object
+* delete("propertyname") - deletes the property names of each object found
+* set("propertyname", value) - this sets the property names of each object. However, it will not refresh the search
+* map(function(item){}) - runs each object through the function
+* get() - returns the values
+
 ## Notes
 
 * Javascript returns objects by reference
 * if you want to edit something and have that happen to all pointers, you'll need to get the reference rather than the value using `{.path == value}`
 * if you just want the values, then the set and delete methods do almost nothing
+* I may make this asyncronous compatable in the future
