@@ -6,13 +6,7 @@ Provides a wrapper around [jspath](https://github.com/dfilatov/jspath) that allo
 Example
 
 `
-PathWrapper('..{.color === "red"}')
-.apply({a:{b:{color:"red"}}}).map(console.log)
-.set("color","blue").map(console.log)
-.prep('..{.color === "blue"}').map(console.log)
-.set("background-color","red").map(console.log)
-.delete("color").map(console.log)
-.get().forEach(function(item){
+PathWrapper('..{.color === "red"}').apply({a:{b:{color:"red"}}}).map(console.log).set("color","blue").map(console.log).prep('..{.color === "blue"}').map(console.log).set("background-color","red").map(console.log).delete("color").map(console.log).get().forEach(function(item){
  console.log("this is an array item");
 })
 `
