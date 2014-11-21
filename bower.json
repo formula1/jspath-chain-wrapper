@@ -1,0 +1,27 @@
+{
+  "name": "jspath-chain-wrapper",
+  "main": "jspath-chain-wrapper.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/formula1/jspath-chain-wrapper",
+  "authors": [
+    "formula1 <samtobia@gmail.com>"
+  ],
+  "description": "Provides a chainable interface around jspath",
+  "keywords": [
+    "JSPath",
+    "promise",
+    "deferred",
+    "chain"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jspath": "~0.2.13"
+  }
+}

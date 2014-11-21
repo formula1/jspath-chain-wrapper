@@ -1,0 +1,27 @@
+{
+  "name": "jspath-chain-wrapper",
+  "version": "1.0.0",
+  "description": "Provides a Chainable interface to JSPath",
+  "main": "jspath-chain-wrapper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/formula1/jspath-chain-wrapper.git"
+  },
+  "keywords": [
+    "jspath",
+    "chain",
+    "promise",
+    "deferred"
+  ],
+  "author": "Sam Tobia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/formula1/jspath-chain-wrapper/issues"
+  },
+  "dependencies": {
+    "jspath": "~0.2.13"
+  }
+}
